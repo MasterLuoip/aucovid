@@ -23,6 +23,7 @@
     </form>
 
     <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
+    <mp-button type="default" size="large" btnClass="mb15">默认按钮</mp-button>
 
     <div class="all">
         <div class="left">
@@ -35,6 +36,7 @@
 
 <script>
 import card from '@/components/card'
+import mpButton from 'mpvue-weui/src/button'
 
 export default {
   data () {
@@ -42,13 +44,14 @@ export default {
       motto: 'Hello miniprograme',
       userInfo: {
         nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
+        avatarUrl: false
       }
     }
   },
 
   components: {
-    card
+    card,
+    mpButton
   },
 
   methods: {

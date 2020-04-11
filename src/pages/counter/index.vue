@@ -5,18 +5,33 @@
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
     </p>
+    <p>Confirmed: {{display['NSW']['Deaths']}}</p>
   </div>
 </template>
 
 <script>
 // Use Vuex
 import store from './store'
+// import { mapState } from 'vuex'
 
 export default {
+  data () {
+    return {
+      // display: {}
+    }
+  },
   computed: {
+    display () {
+      debugger
+      return this.$store.state.stats.statesObj
+    },
     count () {
       return store.state.count
     }
+  },
+  created () {
+    this.$store.dispatch('stats/getStatesData')
+      .catch((message) => (console.log(message)))
   },
   methods: {
     increment () {
