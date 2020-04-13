@@ -22,7 +22,6 @@ export default {
   },
   computed: {
     display () {
-      debugger
       return this.$store.state.stats.statesObj
     },
     count () {
