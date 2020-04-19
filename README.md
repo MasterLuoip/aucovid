@@ -1,6 +1,9 @@
 # miniaucovid
 
-> A Mpvue project
+A Mpvue mini program project.
+UI Library: weui
+本人第一款基于Mpvue 框架开发的微信小程序，提供澳洲COVID-19疫情每日更新。因API域名未经过ICP备案，项目无法提交审批。又因此程序不是来自医疗卫生机构，审批也无法通过，所以此小程序无法发布。
+
 
 ## Build Setup
 
