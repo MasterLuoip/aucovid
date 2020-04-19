@@ -1,9 +1,7 @@
 {
   "pages": [
     "pages/auStates/main",
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+    "pages/index/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
